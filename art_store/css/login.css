@@ -1,0 +1,41 @@
+body{
+  background-color: #f7f7f7;
+}
+p{
+  font-size: 20px;
+}
+a{
+  position: absolute;
+  top: 13%;
+  left: 70%;
+  display: inline;
+  text-decoration: none;
+  color: #989898;
+}
+#login{
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  width: 350px;
+  height: 300px;
+  border: 1px solid #72636E;
+  border-radius: 25px;
+  background-color: white;
+}
+#cancel{
+  position: absolute;
+  left: 50px;
+  border: none;
+  background-color: white;
+}
+#cancel:hover{
+  background-color: #f7f7f7;}
+#accept{
+  background-color: #989898;
+  position: absolute;
+  left: 125px;
+  border: none;
+  color: white;
+}
+#accept:hover{
+  opacity: 0.7}

@@ -1,0 +1,21 @@
+body{
+  background-image: url("../pic/b_content.jpg");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+}
+div{
+  float: left;
+  margin-left: 3%;
+  width: 300px;
+  height: 550px;
+  border: 0.5px solid #989898;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+h4{
+  color: #424951;
+}
+a{
+  color: #424951;
+}

@@ -1,0 +1,29 @@
+body{
+  background-image: url("../pic/b_member.jpg");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+}
+#topic{
+  text-align: center;
+  font-size: 28px;
+  z-index: 10;
+}
+a{
+  text-decoration: none;
+  color: #0B346E;
+}
+p{
+  text-align: center;
+}
+#tb{
+  display: table;
+  /* border: 1px solid white; */
+}
+#show{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.content{
+  color: #424951;
+  border-bottom: 1px solid #424951;;
+}

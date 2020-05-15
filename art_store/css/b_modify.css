@@ -1,0 +1,41 @@
+body{
+  background-color: #f7f7f7;
+}
+p{
+  font-size: 24px;
+}
+a{
+  position: absolute;
+  top: 7%;
+  left: 70%;
+  display: inline;
+  text-decoration: none;
+  color: #989898;
+}
+#modify_data{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 350px;
+  height: 480px;
+  border: 1px solid #72636E;
+  border-radius: 25px;
+  background-color: white;
+}
+#re{
+  position: absolute;
+  left: 50px;
+  border: none;
+  background-color: white;
+}
+#re:hover{
+  background-color: #f7f7f7;}
+#modify{
+  background-color: #989898;
+  position: absolute;
+  left: 125px;
+  border: none;
+  color: white;
+}
+#modify:hover{
+  opacity: 0.7}
