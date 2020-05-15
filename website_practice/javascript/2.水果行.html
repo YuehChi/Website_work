@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2.水果行</title>
+    <style type="text/css"> 
+      body {
+        background-image: url(3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    
+      h1 {
+        font-size: 35pt;
+        color: orange;
+        text-align: center;
+      }
+
+      p {
+        font-size: 20pt;
+        color: seagreen;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>歡迎來到中山水果行</h1>
+    <div >
+      <p >以下為各項水果的價格~</p>
+    </div>
+
+    <table border="1" align="center">
+      <script language="javascript">
+      //二微陣列印出來
+      var price = new Array(4);
+      for(var i = 0; i < price.length; i++)
+      price[i] = new Array(3);				
+      price[0][0]="名稱";
+      price[0][1]="單位";
+      price[0][2]="價格";
+      price[1][0]="芒果";
+      price[1][1]="斤";
+      price[1][2]= 30;
+      price[2][0]="蘋果";
+      price[2][1]="顆";
+      price[2][2]= 50;
+      price[3][0]="仙桃";
+      price[3][1]="兩";
+      price[3][2]= 100;
+      for(var i = 0; i < price.length; i++)	       {
+          document.write("<tr>");
+          for(var j = 0; j < price[i].length; j++)
+              document.write("<td>" + price[i][j] + "</td>");
+              document.write("</tr>");
+        }
+      </script>
+    </table>
+    <br> 
+    <div align="center">
+      <script language="javascript">
+        function totalprice(a, b, c) {
+          sum = a * price[1][2] + b * price[2][2] + c * price[3][2];
+          document.write("購買的總價是: " + sum + "元<br>");
+        }
+
+        document.write("張三買了芒果 2 斤、蘋果 5 顆、仙桃 10 兩<br>");
+        totalprice(2, 5, 10);
+        document.write("李四買了芒果 5 斤、蘋果 10 顆、仙桃 2 兩<br>");
+        totalprice(5, 10, 2);
+      </script>
+    </div>
+   
+  </body>
+</html>

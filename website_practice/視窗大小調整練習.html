@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>8-01.html</title>
+   <style>
+	  @media screen and (max-width:499px) {
+	     body {
+			background-color:yellow;
+		 }
+		 p { font-size:12pt; color:white; }
+		 p.tablt{
+			 display: none;
+		 }
+		 p.pc{
+			 display: none;
+		 }
+	  }	  
+	  @media screen and (max-width:800px) and (min-width:500px) {
+	     body {
+			background-color:green;
+		 }
+		 p { font-size:20pt;color: yellow; }
+
+		 p.pc{
+			 display: none;
+		 }
+		 p.phone{
+			 display: none;
+		 }
+	  }	  
+	  @media screen and (min-width:801px) {
+	     body {
+			background-color:red;
+		 }
+		 p { font-size:28pt;color: green; }
+
+		 p.tablt{
+			 display: none;
+		 }
+		 p.phone{
+			 display: none;
+		 }
+	  }	  
+	 
+   </style>   
+</head>
+<body>
+<h1>請更改視窗寬度</h1>
+<p>視窗寬度小於480px時背景底色和字型大小會改變</p>
+<p class="pc">我是PC </p>
+<p class="tablt">我是平板 </p>
+<p class="phone">我是手機 </p>
+</body>
+</html>

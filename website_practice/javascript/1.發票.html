@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>1.發票</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style type="text/css">
+        body {
+            background-image: url(2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        h1 { font-size:40pt;color: whitesmoke; 
+        }
+
+        .ori{
+            font-size: 25pt; color:yellow;
+        }
+        
+        .sec{
+            font-size: 25pt; color: coral;
+        }
+
+        p{
+            font-size: 20pt; color:crimson;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function answer() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            var w = 0;
+            var n = Math.floor(Math.random() * 999);
+            for (var i = 1; i <= 1000; i++) {
+                n = Math.floor(Math.random() * 999);
+                switch (n) {
+                    case 404:
+                        x++;
+                        break;
+                    case 36:
+                        y++;
+                        break;
+                    case 629:
+                        z++;
+                        break;
+                    case 516:
+                        w++;
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+            var aa = 0;
+            aa = x + y + z + w;
+            
+            var newp = document.createElement("p");
+            newp.innerHTML = "中獎" + aa + "次";
+            var adddiv = document.getElementById("nn");
+            adddiv.appendChild(newp);
+ 
+        }
+    </script>
+</head>
+<body>
+    <h1>歡迎來到發票對對樂</h1>
+    <div id="nn">
+        <p class="ori">本期發票六獎中獎號碼為404、036、629、516，點擊下方按鈕，將隨機產出000至999中的一個數字，並計算出1000次中，共中獎幾次</p>
+        <p class="sec">快試試你的運氣吧~</p>
+    </div>
+    <br>
+    <button onclick="answer();">Click</button>
+    <br>
+</body>
+</html>

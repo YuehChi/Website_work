@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        h1,p {
+            color: red;
+            font-size: 28pt;
+        }
+        div {
+            box-sizing: border-box;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+            border: 1px solid white;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+    
+        @media screen and (max-width:800px) {
+            body {
+                background-color:orangered;
+            }
+    
+            h1, p {
+                color: cyan;
+                font-size: 20px;
+            }
+            .col-12 {
+                width: 100%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:500px) {
+            body {
+                background-color: blueviolet;
+            }
+            h1,p {
+                color:khaki;
+                font-size: 12pt;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+        /*
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    */
+    </style>
+</head>
+
+<body>
+    <h1>看我的表情</h1>
+    <div class="col-4 col-12 col-12">
+        <p>^~^ ^~^ ^~^ ^~^ ^~^ ^~^ ^~^  </p>
+    </div>
+    <div class="col-4 col-6 col-12">
+        <p>*#* *#* *#* *#* *#* *#* *#* </p>
+    </div>
+    <div class="col-4 col-6 col-12">
+        <p>~\o/~ ~\o/~ ~\o/~ ~\o/~ ~\o/~</p>
+    </div>
+
+</body>
+</html>

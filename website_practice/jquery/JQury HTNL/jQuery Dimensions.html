@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".button1").click(function(){
+        $("#div1").width(500).height(500);
+    });
+});
+</script>
+<style
+#div1 {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+</style>
+<script>
+    $(document).ready(function(){
+        $(".button2").click(function(){
+            var txt = "";
+            txt += "Document width/height: " + $(document).width();
+            txt += "x" + $(document).height() + "\n";
+            txt += "Window width/height: " + $(window).width();
+            txt += "x" + $(window).height();
+            alert(txt);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".button3").click(function(){
+            var txt = "";
+            txt += "Width of div: " + $("#div1").width() + "</br>";
+            txt += "Height of div: " + $("#div1").height() + "</br>";
+            txt += "Outer width of div (margin included): " + $("#div1").outerWidth(true) + "</br>";
+            txt += "Outer height of div (margin included): " + $("#div1").outerHeight(true) + "</br>";
+            txt += "Inner width of div: " + $("#div1").innerWidth() + "</br>";
+            txt += "Inner height of div: " + $("#div1").innerHeight();
+            $("#div1").html(txt);
+        });
+    });
+</script>
+
+</head>
+<body>
+
+<div id="div1"></div>
+<br>
+
+<button class="button1">Resize div</button>
+<button class="button2">Display dimensions of document and window</button>
+<button class="button3">Display dimensions of div</button>
+
+
+</body>
+</html>

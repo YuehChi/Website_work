@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script>
+        function add() {
+            
+            var newp = document.createElement("p");
+            newp.id="np";
+            newp.innerHTML = "這個世界";
+            var addp = document.getElementById("addp");
+            addp.appendChild(newp);
+        }
+        function del() {
+            var delNode = document.getElementById("delNode02");
+            delNode.parentNode.removeChild(delNode);	
+        }
+        
+    </script>
+</head>
+<body >
+    <h1>我是h1</h1>
+    <h1>我也是h1</h1>
+    <div>
+        <span id="addp">1234</span>
+        <span>5678</span>
+        <div>
+            <p>我是第一段</p>
+            <p>我是第二段</p>
+        </div>
+    </div>
+    <p id="delNode02">我是文章</p>
+    <br>
+    <button onclick="add();">append</button>
+    <br>
+    <br>
+    <button onclick="del();">delet</button>
+    <br>
+</body>
+</html>

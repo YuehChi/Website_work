@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".after").click(function(){
+        $("#af").hide("slow", function(){
+            alert("The paragraph is now hidden");
+        });
+    });
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".before").click(function(){
+            $("#be").hide(1000);
+            alert("The paragraph is now hidden");
+        });
+    });
+    </script>
+</head>
+<body>
+
+<button class = after>Hide1</button>
+<button class = before>Hide2</button>
+
+<p id = "af">This is a paragraph with little content.</p>
+
+<p id = "be">This is another paragraph with little content.</p>
+
+</body>
+</html>

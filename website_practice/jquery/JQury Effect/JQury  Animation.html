@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $("#box1").click(function(){
+            $(".box1").animate({left: '250px'});
+        });
+    });
+    </script> 
+    <script> 
+        $(document).ready(function(){
+            $("#box2").click(function(){
+                $(".box2").animate({
+                    left:   '500px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+                });
+            });
+        });
+        </script> 
+    <script> 
+        $(document).ready(function(){
+            $("#box3").click(function(){
+                $(".box3").animate({
+                    left: '50px',
+                    height: '+=150px',
+                    width: '+=150px'
+                });
+            });
+        });
+    </script> 
+
+    <script> 
+        $(document).ready(function(){
+            $("#box4").click(function(){
+                $(".box4").animate({
+                    height: 'toggle'
+                });
+            });
+        });
+    </script> 
+    <script> 
+        $(document).ready(function(){
+            $("#box5").click(function(){
+                var div = $(".box5");
+                div.animate({height: '300px', opacity: '0.4'}, "slow");
+                div.animate({width: '300px', opacity: '0.8'}, "slow");
+                div.animate({height: '100px', opacity: '0.4'}, "slow");
+                div.animate({width: '100px', opacity: '0.8'}, "slow");
+            });
+        });
+    </script> 
+    <script> 
+        $(document).ready(function(){
+            $("#box6").click(function(){
+                var div = $(".box6");  
+                div.animate({left: '750px'}, "slow");
+                div.animate({fontSize: '3em'}, "slow");
+            });
+        });
+    </script> 
+
+</head>
+<body>
+
+    <p>By default, all HTML elements have a static position, and cannot be moved.<br>
+     To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+     
+    <button id = "box1">Start first box Animation</button>
+    <div class = "box1"style="background:#ffb7ff;height:100px;width:100px;position:fixed;"></div>
+
+    <button id = "box2">Start second box Animation</button>
+    <div class = "box2"style="background:#c6ffff;height:100px;width:100px;position:fixed;"></div>
+
+    <button id = "box3">Start third box Animation bigger and bigger</button>
+    <div class = "box3"style="background:#e1ffe1;height:100px;width:100px;position:absolute;"></div>
+
+    <button id = "box4">Start forth box Animation toggle </button>
+    <div class = "box4" style="background:#ffb693;height:100px;width:100px;position:absolute;"></div>
+
+    <button id = "box5">Start fifth box Animation round </button>
+    <div class = "box5" style="background:#ffffb5;height:100px;width:100px;position:absolute;"></div>
+
+    <button id = "box6">Start sith box Animation  </button>
+    <div class = "box6" style="background:#ca95ff;height:100px;width:200px;position:absolute;">HELLO</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>自我介紹</title>
+    <style type="text/css">
+      body{
+          background-image: url(bg.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        img{
+          height:380px;
+          width:370px;
+          }
+          .box:hover::before{
+            display: block;
+            content:"夏目友人帳，超級好看";
+            font-size:20px;
+            width: 300px;
+          }
+          .box:hover::after{
+            display: block;
+            content:"貓咪老師，好Q!";
+            font-size:20px;
+            width: 300px;
+          }
+    </style>
+  </head>
+  <body>
+    <div id ="all" style="wdith:600;hight:800;">
+      <div id ="name" style="width:600; hight:150; background-color:#D9E5D6; margin:20px 0px 20px 0px;text-align:center;line-height:75px;">
+        <h1 style ="color:#1b3db0;"><em> Hello~ My name is 紀玥綺 !</em></h1>
+      </div>
+      <div id ="My self" style=" float:left; margin:0px 15px 20px 280px;">
+        <div class="box">
+          <img src="https://tp.xkodm.com/d/file/bigpic/2019-10-23/20/204054222.jpg" alt="消失了，我也沒辦法!">
+        </div>
+        <div id ="word">
+          <p  style ="color:#3f7197;font-size:35px; font-family:Arial;"><strong>My facebook:</strong></p>
+          <a href="https://www.facebook.com/profile.php?id=100002589052358 "target="_blank" style = "font-size:30px">
+          <font style=cursor='hand' onMouseover="this.color='#f5e6cc'"onmouseout="this.color='#6B2B06 '">Chi Yueh-Chi \(>*<)/</font>
+          </a>
+          <P style="color:#324370;font-size:25px;background-color:#A1EF8B;font-family:微軟正黑體;">來至大甲，喜愛動畫，熱愛參加各種活動<br/>目前就讀國立中山大學資管系</p>
+        </div>
+      </div>
+      <div id ="form" style="width:495px;hight:660px;float:left;background:#fee7c0; margin:0px 50px 10px 80px;">
+        <form action="./page2.php">
+          <table  width="495px" height="660px" border="5">
+            <tr>
+              <th colspan="2">意見調查</th>
+            </tr>
+            <tr>
+              <td align="right">姓名：</td>
+              <td><input type="text" name="name" value="請輸入姓名" /></td>
+            </tr>
+            <tr>
+              <td align="right">性別：</td>
+              <td>
+                <input type="radio" name="gender" value="male" /> 男
+                <input type="radio" name="gender" value="female" /> 女
+              </td>
+            </tr>
+            <tr>
+              <td align="right">興趣：</td>
+              <td>
+                <input type="checkbox"	name="interest" value="music" /> 聽音樂
+                <input type="checkbox"	name="interest" value="movie" /> 看電影
+                <input type="checkbox"	name="interest" value="sleep" /> 睡覺
+                <input type="checkbox"	name="interest" value="music" /> 看動畫、小說
+                <input type="checkbox"	name="interest" value="movie" /> 戶外運動
+              </td>
+            </tr>
+            <tr>
+              <td align="right" rowspan="2">學校系所：</td>
+              <td >
+                <select name="school">
+                  <option  value="nsysu"> 國立中山大學 </option>
+                  <option  value="ntu"> 國立台灣大學 </option>
+                  <option  value="nccu"> 國立政治大學 </option>
+                  <option  value="ncu"> 國立中央大學 </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <select name="department">
+                    <option  value="MIS">資管系 </option>
+                    <option  value="CL"> 中文系</option>
+                    <option  value="FLL"> 外文系</option>
+                    <option  value="HIS">歷史系 </option>
+                    <option  value="MATH">數學系 </option>
+                    <option  value="EE">電機系 </option>
+                    <option  value="ACC">會計系 </option>
+                    <option  value="BA"> 企管系</option>
+                  </select>
+                </td>
+              </tr>
+              <tr colspan="2">
+                <td align="right"> 意見: </td>
+                <td><textarea  name="about" width="500px" hight="300px">關於這個網站</textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <input  type="submit"  value="送出" />
+                  <input  type="reset"  value="重設" />
+                </td>
+              </tr>
+            </table>
+          </from>
+        </div>
+      </div>
+  </body>
+</html>

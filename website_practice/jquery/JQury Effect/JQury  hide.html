@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $("#hide").click(function(){
+            $("h1").hide("slow");
+        });
+        $("#show").click(function(){
+            $("h1").show(1000);
+            });
+        });
+      </script>
+      <script>
+        $(document).ready(function(){
+            $(".ex .hide").click(function(){
+                $(this).parents(".ex").hide("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".toggle").click(function(){
+                $(".hish").toggle("fast");
+            });
+        });
+        </script>
+
+    <style> 
+      div.ex {
+          background-color: #f1d299;
+          padding: 7px;
+          border: solid 1px #eb3939;
+      }
+    </style>
+</head>
+<body>
+
+    <h1>This is a paragraph with little content.</h1>
+    <h1>If you click on the "Hide" button, I will disappear.</h1>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <h3>Island Trading</h3>
+
+    <div class="ex">
+      <button class="hide">Hide me</button>
+      <p>Contact: Helen Bennett<br> 
+      Garden House Crowther Way<br>
+      London</p>
+    </div>
+
+    <h3>Paris Specialities</h3>
+
+    <div class="ex">
+      <button class="hide">Hide me</button>
+      <p>Contact: Marie Bertrand<br> 
+      265, Boulevard Charonne<br>
+      Paris</p>
+    </div>
+
+    <button class="toggle">This is a toggle button</button>
+    <p class = "hish">This is a new paragraph.</p>
+
+</body>
+</html>

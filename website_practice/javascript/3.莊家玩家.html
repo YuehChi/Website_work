@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3.莊家玩家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    
+    <style type="text/css">
+
+        html{
+            height: 100%;
+        }
+
+        body {
+            background-image: url(4.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        h1 {
+            font-size: 40pt;
+            color: whitesmoke;
+        }
+        h2{
+            color: white;
+        }
+    
+        .ori {
+            font-size: 25pt;
+            color: yellow;
+        }
+    
+        .sec {
+            font-size: 25pt;
+            color: coral;
+        }
+    
+        p {
+            font-size: 20pt;
+            color: crimson;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function answer() {
+            var k = 0;
+            var det = 0;
+            while(k<=100){
+                //玩家點數
+                var a_sum = 0;
+                var a = 0;
+                for(var i=1;i<=3;i++){  
+                    a = Math.floor(Math.random()*6+1); 
+                    a_sum = a_sum + a; 
+                }  
+                //莊家點數
+                var b_sum = 0;
+                var b = 0;
+                for(var i=1;i<=3;i++){  
+                    b = Math.floor(Math.random()*6+1); 
+                    b_sum = b_sum + a; 
+                }  
+                
+                if(a_sum>b_sum){
+                    det= det+100;
+                }
+                else if (a_sum<b_sum){
+                    det = det-100;
+                }
+                
+                k++;
+            }
+            if(det>0){
+                var newp = document.createElement("p");
+                newp.innerHTML = "玩家贏了" + det + "元";
+                var adddiv = document.getElementById("nn");
+                adddiv.appendChild(newp);
+            }
+            else if (det<0){
+                 
+                var newp = document.createElement("p");
+                newp.innerHTML = "玩家賠了" + det + "元";
+                var adddiv = document.getElementById("nn");
+                adddiv.appendChild(newp);
+            }
+            else{
+                 
+                var newp = document.createElement("p");
+                newp.innerHTML = "玩家不賺不賠";
+                var adddiv = document.getElementById("nn");
+                adddiv.appendChild(newp);
+            }
+        }
+    </script> 
+</head>
+<body>
+    <h1>CASION WORLD</h1>
+    <div id="nn">
+        <h2 >----遊戲說明--------</h2>
+        <p class="ori">將隨機產生3個1~6的數字，做為莊家擲骰子的點數；<br>再隨機產生另外3個1~6的數字，做為玩家擲骰子的點數。<br>玩家沒贏則賠掉100
+        元，玩家贏了則莊家賠100元。<br>重複玩1000次之後，按下下方按鈕後，將呈現玩家賺或賠多少？</p>
+        <p class="sec">來吧~來賭吧~</p>
+    </div>
+    <div >
+        <br>
+        <button onclick="answer();">Click</button>
+        <br>
+    </div>
+</body>
+</html>

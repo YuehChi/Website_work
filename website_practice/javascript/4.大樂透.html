@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>4.大樂透</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        function answer() {
+            var n = 0;
+            var num = new Array(6);
+            for(var i=0;i<6;i++){  
+                n = Math.floor(Math.random()*49+1);
+                num[i]=n;
+                    if(i>0){
+                        for(var k=0;k<i;k++){
+                            if(num[k]==num[i]){
+                                num[i]=Math.floor(Math.random()*49+1);
+                            }
+                        }
+                    }  
+            }  
+                var newp = document.createElement("p");
+                newp.innerHTML = "大樂透開獎號碼為: "+ num[0] + "、" + num[1] + "、 "+ num[2] + "、 "+num[3] + "、"+num[4] + "、"+ num[5];
+                var adddiv = document.getElementById("nn");
+                adddiv.appendChild(newp);
+        
+        }
+    </script> 
+    <style type="text/css">
+        body {
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        h1 {
+            font-size: 40pt;
+            color: black;
+            text-align: center;
+        }
+    
+        .ori {
+            font-size: 25pt;
+            color: darkblue;
+            text-align: center;
+        }
+    
+        .sec {
+            font-size: 25pt;
+            color: plum;
+            text-align: center;
+        }
+    
+        p {
+            font-size: 20pt;
+            color: seagreen;
+            text-align: center;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>歡迎來到樂透大贏家</h1>
+    <div id="nn">
+        <p class="ori">在1~49個號碼中將隨機開出6個號碼，按下下方按鈕後，就會出現囉~(^8^)~</p>
+        <p class="sec">快準備好你的幸運號碼~</p>
+    </div>
+    <div align="center">
+        <button onclick="answer();">Click</button>
+    </div>
+</body>  
+</html>
