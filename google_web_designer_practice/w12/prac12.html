@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>中山大學導覽</title> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="home">
+
+	<div data-role="header">
+		<h1>中山大學</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/4.jpg" height="500px" width="1000px"></p>
+		<p style="text-align:center">中山校區</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" class="ui-btn-active">回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="map">
+
+	<div data-role="header">
+		<h1>中山大學</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/1.jpg" height="800px" width="1000px"></p>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search"class="ui-btn-active">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="list">
+
+	<div data-role="header">
+		<h1>中山大學</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview" data-theme="g">
+			<li><a href="#administrative">行政單位</a></li>
+			<li><a href="#teach">教學單位</a></li>
+			<li><a href="#dome">宿舍</a></li>
+			<li><a href="#sport">運動場所</a></li>
+			<li><a href="#building">景觀設施</a></li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="administrative">
+
+	<div data-role="header">
+		<h1>行政單位</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul>
+		<li>行政大樓</li>
+		<li>圖資大樓</li>
+		<li>逸仙館</li>
+		<li>體育館</li>
+		<li>學生活動中心</li>
+		<li>國際研究中心</li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="teach">
+
+	<div data-role="header">
+		<h1>教學單位</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul>
+		<li type="square">社會科學院</li>
+		<li type="square">管理學院</li>
+		<li type="square">理學院</li>
+		<li type="square">工學院</li>
+		<li type="square">生科館</li>
+		<li type="square">物理館</li>
+		<li type="square">化學館</li>
+		<li type="square">材料大樓</li>
+		<li type="square">環工大樓</li>
+		<li type="square">電資大樓</li>
+		<li type="square">通識中心</li>
+		<li type="square">海工館</li>
+		<li type="square">海洋科學學院</li>
+		<li type="square">海洋資源管</li>
+		<li type="square">藝術大樓</li>
+		<li type="square">文學院</li>
+
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="dome">
+
+	<div data-role="header">
+		<h1>宿舍</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul>
+		<li type="circle">職員宿舍</li>
+		<li type="circle">女生宿舍-H/L棟</li>
+		<li type="circle">男生宿舍-翠亨</li>
+		<li type="circle">男生宿舍-武嶺</li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="sport">
+
+	<div data-role="header">
+		<h1>運動場所</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul>
+		<li type="circle">操場</li>
+		<li type="circle">游泳池</li>
+		<li type="circle">網球場</li>
+		<li type="circle">棒壘球場</li>
+		<li type="circle">溜冰場</li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="building">
+
+	<div data-role="header">
+		<h1>景觀設施</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul>
+		<li>蔣公行館</li>
+		<li>幼稚園</li>
+		<li>海景餐廳</li>
+		<li>隧道口</li>
+		<li>西子灣</li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">單位列表</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

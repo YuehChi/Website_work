@@ -1,0 +1,271 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>日月潭導覽</title> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<style type="text/css">
+    .url_nature {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 35px;
+      top: 245px;
+    }	
+	.url_art {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 50px;
+      top: 145px;
+    }	
+	.url_3D {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 35px;
+      top: 245px;
+    }	
+	.url_info {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 35px;
+      top: 245px;
+    }	
+	.url_tree {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 127px;
+      top: 176px;
+    }	
+	</style>
+</head> 
+<body> 
+
+<div data-role="page" id="home">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/title.png"></p>
+		<p>日月潭風景區管理處的向山遊客中心，為日月潭畔的新景點，也是遊客必到景點之一。該建築物由日本建築師團紀彥所設計，整體設計以融入原有地景為中心思想，斜坡式草皮可直通屋頂，以多種弧形從地面拉出所有空間，尋求與大自然的和諧，最特別的就是靠近日月潭的水池以無邊緣的設計讓池面與潭面融為一體。</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" class="ui-btn-active">回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="map">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<img src="assets/mountain.png">
+		<a href="#nature"><div class="url_nature"></div></a>
+		<a href="#art"><div class="url_art"></div></a>
+		<a href="#3D"><div class="url_3D"></div></a>
+		<a href="#info"><div class="url_info"></div></a>
+		<a href="#tree"><div class="url_tree"></div></a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home">回首頁</a></li>
+		<li><a href="#map"  data-icon="search" class="ui-btn-active">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="list">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview" data-theme="g">
+			<li><a href="#nature">自然人文館</a></li>
+			<li><a href="#art">日昇月恆藝廊</a></li>
+			<li><a href="#3D">3D 媒體室</a></li>
+			<li><a href="#info">遊客中心</a></li>
+			<li><a href="#tree">木紋清水模</a></li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star" class="ui-btn-active">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="tips">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul>
+		<li>可由「地圖導覽」或「景點列表」選取景點。</li>
+		<li>「地圖導覽」模式中，在圓形標示點按一下滑鼠左鍵即可進入「景點導點」頁面。</li>
+		<li>「景點列表」模式中，點按景點名稱即可進入「景點導點」頁面。</li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear"class="ui-btn-active">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="nature">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/nature.jpg"></p>
+		<p>「自然人文館」以影音互動式導覽遊客認識日月潭的文歷史和自然景觀。房廳的中間是日月潭的立體地圖，可以一眼看清日月潭面目，也很有意思。週圍的展示則是著重在日月潭的自然景觀、歷史，與原住民的文化采風錄。</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="art">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/art.jpg"></p>
+		<p>「日昇月恆藝廊」以潭區附近工藝名家作品展為主題，大約每隔半年會更換展品，覽出作品非常精緻。也因為展出規模不大，和一般特展或大展有所區隔，對一般遊客來說，不會有太大的壓力，能自在地親臨一場藝文洗禮。</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="3D">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/3D.jpg"></p>
+		<p>多媒體影音播放室有3D立體多媒體簡介，帶給遊客意想不到的影音震撼。多媒體影音播放時間，3D：10</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="info">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/info.jpg"></p>
+		<p>遊客中心提供遊客各項服務，展場包含「悠遊水沙連-產業館」，網羅了大日月潭地區的陶藝、紙藝、工藝、酒類、紅茶及農特產等特色產業，並提供產業資訊。日月潭週遭地區的農特產、工藝品，都已經被有系統地整體設計與行銷，像小米酒即使你不喝，光是瓶身、酒名與專屬圖騰或公仔圖案，很多人沖著造型而帶回家蒐藏。</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home" >回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star"class="ui-btn-active">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="tree">
+
+	<div data-role="header">
+		<h1>日月潭遊客中心</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p align="center"><img src="assets/tree.jpg"></p>
+		<p>向山遊客中心建築表面並沒有貼上色彩鮮豔的瓷磚或者洗石子，而是採用以木紋模清水混凝土為主，使用的材質為「台灣杉」。直接以木板壓製出紋路，簡約而富有禪味的處理方式，其實展現的正是一種具時尚感的藝術品。</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<div data-role="navbar">
+		<ul>
+		<li><a href="#home" data-icon="home">回首頁</a></li>
+		<li><a href="#map"  data-icon="search">地圖導覽</a></li>
+		<li><a href="#list" data-icon="star" class="ui-btn-active">景點列表</a></li>
+		<li><a href="#tips" data-icon="gear">使用說明</a></li>
+		</ul>
+		</div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
