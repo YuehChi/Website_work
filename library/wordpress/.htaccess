@@ -1,0 +1,12 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /web%E4%BD%9C%E5%93%81%E9%9B%86/library/library/wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /web%E4%BD%9C%E5%93%81%E9%9B%86/library/library/wordpress/index.php [L]
+</IfModule>
+
+# END WordPress
